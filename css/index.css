@@ -1,0 +1,12 @@
+.hero {
+    margin: 0;
+    width: 100%;
+    padding: 5vw;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 2rem;
+    background: fixed center radial-gradient(18% 28% at 24% 50%, hsl(186, 100%, 90%) 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 18% 71%, rgba(255, 255, 255, 0.349) 6%, rgba(7, 58, 255, 0) 100%), radial-gradient(70% 53% at 36% 76%, #73f2ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 15% 94%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 34% 72%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 35% 87%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(31% 43% at 7% 98%, #ffffff 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(21% 37% at 72% 23%, rgba(211, 255, 109, 0.612) 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(35% 56% at 91% 74%, rgba(138, 79, 255, 0.961) 9%, rgba(7, 58, 255, 0) 100%), radial-gradient(74% 86% at 67% 38%, rgba(109, 255, 174, 0.961) 24%, rgba(7, 58, 255, 0) 100%), linear-gradient(125deg, #4eb5ff 1%, #4c00fc 100%);
+}
