@@ -22,14 +22,14 @@ nav.list[0] = [{
   ]
 },]
 
-nav.list[1] = [{
-  name: "友情链接", icon: "fa-solid fa-link", item: [
-    // { text: "移动应用开发实验室", link: "https://mobile.xupt.edu.cn/" },
-    // { text: "移动应用开发实验室", link: "http://http://222.24.63.109/" },
-    // { text: "移动应用开发实验室", link: "https://xiyoumobile.com/" },
-    { text: "西柚导航", desc: "第三方西邮网址导航", icon: "fa-solid fa-compass", link: "https://cooo.site/" },
-  ]
-},]
+// nav.list[1] = [{
+//   name: "友情链接", icon: "fa-solid fa-link", item: [
+//     // { text: "移动应用开发实验室", link: "https://mobile.xupt.edu.cn/" },
+//     // { text: "移动应用开发实验室", link: "http://http://222.24.63.109/" },
+//     // { text: "移动应用开发实验室", link: "https://xiyoumobile.com/" },
+//     { text: "西柚导航", desc: "第三方西邮网址导航", icon: "fa-solid fa-compass", link: "https://cooo.site/" },
+//   ]
+// },]
 
 nav.list.forEach((list, i) => {
   nav.ele[i].innerHTML = list.map(group => `

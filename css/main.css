@@ -4,29 +4,33 @@
 }
 
 :root {
-    --bg1: #f7f9ff;
-    --bg2: #fff;
+    /* --bg1: #f7f9ff; */
+    --bg1: fixed 100% center radial-gradient(18% 28% at 24% 50%, hsl(186, 100%, 90%) 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 18% 71%, rgba(255, 255, 255, 0.349) 6%, rgba(7, 58, 255, 0) 100%), radial-gradient(70% 53% at 36% 76%, #73f2ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 15% 94%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 34% 72%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 35% 87%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(31% 43% at 7% 98%, #ffffff 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(21% 37% at 72% 23%, rgba(211, 255, 109, 0.612) 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(35% 56% at 91% 74%, rgba(138, 79, 255, 0.961) 9%, rgba(7, 58, 255, 0) 100%), radial-gradient(74% 86% at 67% 38%, rgba(109, 255, 174, 0.961) 24%, rgba(7, 58, 255, 0) 100%), linear-gradient(125deg, #4eb5ff 1%, #4c00fc 100%);
+    /* --bg2: #fff; */
+    --bg2: rgba(255, 255, 255, .3);
     --text1: rgba(0, 0, 0, .8);
     --text2: rgba(0, 0, 0, .7);
     --text3: rgba(0, 0, 0, .4);
+    --textr: #fff;
     --line: #7f7fbf33;
     --ac1: #37f;
     --ac2: rgba(63, 127, 255, .5);
     --ac3: rgba(63, 127, 255, .2);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --bg1: #111;
         --bg2: #222;
         --text1: rgba(255, 255, 255, .9);
         --text2: rgba(255, 255, 255, .7);
         --text3: rgba(255, 255, 255, .4);
+        --textr: #333;
         --ac1: #7db;
         --ac2: rgba(127, 255, 191, .5);
         --ac3: rgba(127, 255, 191, .2);
     }
-}
+} */
 
 a {
     display: inline-block;
@@ -41,7 +45,7 @@ a {
 
 a:hover {
     transform: scale(1.05);
-    color: var(--bg2);
+    color: var(--textr);
     background: var(--ac1);
     box-shadow: .1em .2em .5em var(--ac3);
 }
@@ -88,7 +92,8 @@ body {
     min-height: 100vh;
 }
 
-body>* {
+body>*,
+.wrapper>* {
     width: 90vw;
     margin: 1rem auto;
 }
@@ -147,7 +152,7 @@ body>* {
 .dim,
 footer {
     font-size: .8em;
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     color: var(--text3);
 }
 
@@ -173,7 +178,8 @@ footer {
         font-size: 18px;
     }
 
-    body>* {
+    body>*,
+    .wrapper>* {
         width: 85vw;
     }
 }
