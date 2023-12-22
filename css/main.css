@@ -5,7 +5,7 @@
 
 :root {
     /* --bg1: #f7f9ff; */
-    --bg1: fixed 100% center radial-gradient(18% 28% at 24% 50%, hsl(186, 100%, 90%) 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 18% 71%, rgba(255, 255, 255, 0.349) 6%, rgba(7, 58, 255, 0) 100%), radial-gradient(70% 53% at 36% 76%, #73f2ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 15% 94%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 34% 72%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 35% 87%, #ffffff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(31% 43% at 7% 98%, #ffffff 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(21% 37% at 72% 23%, rgba(211, 255, 109, 0.612) 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(35% 56% at 91% 74%, rgba(138, 79, 255, 0.961) 9%, rgba(7, 58, 255, 0) 100%), radial-gradient(74% 86% at 67% 38%, rgba(109, 255, 174, 0.961) 24%, rgba(7, 58, 255, 0) 100%), linear-gradient(125deg, #4eb5ff 1%, #4c00fc 100%);
+    --bg1: fixed 100% center radial-gradient(18% 28% at 24% 50%, hsl(186, 100%, 90%) 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 18% 71%, rgba(255, 255, 255, .349) 6%, rgba(7, 58, 255, 0) 100%), radial-gradient(70% 53% at 36% 76%, #73f2ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 15% 94%, #fff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(42% 53% at 34% 72%, #fff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(18% 28% at 35% 87%, #fff 7%, rgba(7, 58, 255, 0) 100%), radial-gradient(31% 43% at 7% 98%, #fff 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(21% 37% at 72% 23%, rgba(211, 255, 109, .612) 24%, rgba(7, 58, 255, 0) 100%), radial-gradient(35% 56% at 91% 74%, rgba(138, 79, 255, .961) 9%, rgba(7, 58, 255, 0) 100%), radial-gradient(74% 86% at 67% 38%, rgba(109, 255, 174, .961) 24%, rgba(7, 58, 255, 0) 100%), linear-gradient(125deg, #4eb5ff 1%, #4c00fc 100%);
     /* --bg2: #fff; */
     --bg2: rgba(255, 255, 255, .3);
     --text1: rgba(0, 0, 0, .8);
@@ -87,9 +87,9 @@ pre {
 
 body {
     font-family: 'PingFang SC', Helvetica, sans-serif;
+    min-height: 100vh;
     color: var(--text1);
     background: var(--bg1);
-    min-height: 100vh;
 }
 
 body>*,
@@ -101,10 +101,12 @@ body>*,
 .logo {
     width: 1em;
     height: 1em;
+    vertical-align: middle;
     border-radius: 1em;
     background: url(/static/img/logo2023_compressed.jpg) no-repeat center;
     background: url(/static/img/logo2023_compressed.webp) no-repeat center;
     background-size: contain;
+    box-shadow: 0 0 .1em var(--text3);
 }
 
 @font-face {
@@ -153,6 +155,7 @@ body>*,
 footer {
     font-size: .8em;
     /* line-height: 1.5em; */
+
     color: var(--text3);
 }
 
